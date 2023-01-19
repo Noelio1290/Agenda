@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>La Pagina</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1 class="agenda">Agenda de Contactos</h1>
+    <div class="container">
+
+        <article id="space-for-contacts">
+            <form id="icons-contact" action="">
+
+            </form>
+        </article>
+
+
+        <div class="card-and-form">
+
+            <section id="contacto"></section>
+
+            <section class="form-and-buttons">
+                <div class="form">
+                    <form id="new-contact" action="">
+                        <label class="form-text" for="name"> Nombre</label>
+                        <input class="input-form" type="text" name="inputName" placeholder="Escribe el nombre" id="name">
+                        <label class="form-text" for="email"> Correo electrónico </label>
+                        <input class="input-form" type="text" name="inputEmail" placeholder="Escribe el correo" id="email">
+                        <label class="form-text" for="location"> Ubicación</label>
+                        <input class="input-form" type="text" name="inputLocation" placeholder="Escribe la ubicación" id="location">
+                        <input id="submit-button" class="input-form" type="submit" value="Enviar datos">
+                    </form>
+                </div>
+
+                <div class="buttons">
+                    <button class="option-form" onclick="editUser()" >Editar contacto</button>
+                    <button class="option-form" onclick="deletUser()" >Borrar contacto</button>
+                </div>
+            </section>
+
+        </div>
+    </div>
+    <div class="modal">
+        <section class="modal-edit">
+            <form id="edit-data" action="">
+                <label class="form-text" for="name"> Nombre</label>
+                <input class="input-form" type="text" name="editName" placeholder="Escribe el nuevo nombre" id="name" value="">
+                <label class="form-text" for="email"> Correo electrónico </label>
+                <input class="input-form" type="text" name="editEmail" placeholder="Escribe el nuevo correo" id="email" value="">
+                <label class="form-text" for="location"> Ubicación</label>
+                <input class="input-form" type="text" name="editLocation" placeholder="Escribe la nueva ubicación" id="location" value="">
+                <input id="submit-edit-button" class="input-form" type="submit" value="Enviar datos actualizados">
+            </form>
+        </section>
+
+        <section class="modal-post-user">
+            <div class="send-data-question">
+                <p>¿Desea enviar los datos?</p>
+            </div>
+
+            <div class="send-data-question">
+                <button onclick="sendData()" >Sí, enviar</button>
+                <button onclick="noSendData()" >No enviar</button>
+            </div>
+        </section>
+
+        <section class="modal-delete">
+            <div class="send-data-question">
+                <p>¿Desea eliminar los datos?</p>
+            </div>
+
+            <div class="send-data-question">
+                <button onclick="delContact()" >Eliminar</button>
+                <button onclick="cancelDel()" >Cancelar</button>
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

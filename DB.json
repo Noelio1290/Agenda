@@ -1,0 +1,24 @@
+{
+    "contactList": [ 
+        {
+            "id": 0,
+            "name" : "Alex Cremento",
+            "email" : "alexcremento@contact.com",
+            "ubication" : "Mexico city"
+        },
+
+        {
+            "id": 1,
+            "name" : "Dolores Deano",
+            "email" : "doloresdelano@contact.com",
+            "ubication" : "Colombia"
+        },
+
+        {
+            "id": 2,
+            "name" : "Elver Galarga Tentra",
+            "email" : "elvergalargatentra@contact.com",
+            "ubication" : "Taumatawhakatangihangak, Nueva Zelanda"
+        }
+    ]
+}

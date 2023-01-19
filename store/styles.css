@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+
+    background-color: rgb(230, 230, 230);
+}
+
+.card {
+    display: inline-flex;
+    background-color: rgb(237, 143, 244);
+    width: 40vw;
+    height: 25vh;
+}
+
+.text-info{
+    text-align: center;
+    display: inline-block;
+    height: 29%;
+}
+
+.card-inner, .img-contact{
+    display: flex;
+    width: 49%;
+    height: 99%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.img-contact{
+    width: 150px;
+    height: 150px;
+}
+
+.card-and-form{
+    display: inline-block;
+    width: 80vw;
+    height: 91vh;
+}
+
+#contacto, .form-and-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    height: 45vh;
+}
+
+
+.form-text{
+    display: block;
+    margin: 10px;
+}
+
+.input-form{
+    display: block;
+    margin: 10px;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#space-for-contacts{
+    display: inline-block;
+    width: 19vw;
+    height: 92vh;
+    overflow: scroll;
+}
+
+.icons-input{
+    display: none;
+}
+
+.container{
+    display: inline-flex;
+    width: 100vw;
+    height: 91vh;
+}
+
+.icon{
+    width: 10vw;
+    height: 10vh;
+    background-color: rgb(181, 184, 184);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+h4{
+    display: block;
+    font-size: 10px;
+    background-color: rgb(198, 19, 19);
+    text-align: center;
+    height: 100px;
+    width: 100px;
+}
+
+.agenda{
+    display: inline-flex;
+    width: 100vw;
+    justify-content: center;
+}
+
+.modal{
+    display: none;
+}
+
+.modal.active{
+    display: flex;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100vw;
+    height: 100vh;
+    background: rgb(0, 0, 0, 0.3);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-edit, .modal-post-user, .modal-delete {
+    display: none;
+}
+
+.modal-edit.active, .modal-post-user.active, .modal-delete.active{
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    opacity: 1;
+    width: 300px;
+    height: 300px;
+    align-items: center;
+    flex-flow: column;
+}
+
+.send-data-question{
+    display: flex;
+    height: 40%;
+    align-items: center;
+}
+
+button{
+    width: 80Spx;
+    height: 25px;
+    margin: 15px;
+}
